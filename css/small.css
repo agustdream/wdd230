@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 18px;
+    font-family: "Roboto Mono", "Roboto", monospace, sans-serif;    
+}
+
+header, main, footer {
+    margin: 2rem 1.5rem;
+}
+
+header {
+    background-color: #4e5044;
+    color: beige;
+    text-align: center;
+    padding: .5rem;
+    border-radius: .5rem;
+    box-shadow: 0 0 20px silver;
+}
+
+img {
+    width: 100%;
+}
+
+header img {
+    max-width: 10em;
+    height: auto;
+}
+
+h1, h2, h3 {
+    font-family: 'Roboto Mono', monospace;
+    color: beige;
+}
+h1 {
+    margin: 2rem;
+    text-shadow: 2px 2px 5px black;
+}
+
+h2 {
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+h3 {
+    background-color: #4e5044;
+    padding: .5rem;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+main {
+    margin: 1rem auto;
+    max-width: 64em;
+    display: block;
+}
+
+section {  
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: .5rem;
+    background-color: beige;
+    border-radius: 5px;
+    box-shadow: 0 0 20px silver;
+    display: grid;
+}
+
+section p {
+    margin: 1rem;
+    padding: 1rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+section ul li {
+    margin: .5rem 1.5rem;
+}
+
+#highlight {
+
+    font-style: italic;
+    text-align: center;
+    text-shadow: 1px 1px 2.5px gray;
+}
+
+footer {
+    background-color: #4e5044;
+    color: beige;
+    text-align: center;
+    text-shadow: 2px 2px 5px black;
+    box-shadow: 0 0 20px silver;
+    padding: .5rem;
+    border-radius: .5rem;
+}
