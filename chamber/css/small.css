@@ -1,0 +1,141 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box;
+}
+
+nav {
+    background-color: #e6cd44;
+    display: flex;
+    justify-content: right;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav button {
+    margin: .2rem 2vw;
+    background: transparent;
+    border: none;
+    font-size: 2rem;
+    color: #555;    
+}
+
+nav ul li a {
+    display: block;
+    padding: .8rem 2vw;
+    text-decoration: none;
+    color: #333;
+    border-top: 1px solid rgba(0, 0, 0, .5);
+}
+
+nav ul li.active a {
+    background-color: #8e9394;
+    color: #fff;
+}
+
+nav ul li a:hover {
+    background-color: rgba(0, 0, 0, .3);
+}
+
+nav ul {display: none;}
+nav ul.open {display: block;}
+
+#hamburgerBtn span:nth-child(1) {display: block;}
+#hamburgerBtn span:nth-child(2) {display: none;}
+
+#hamburgerBtn.open span:nth-child(1) {display: none;}
+#hamburgerBtn.open span:nth-child(2) {display: block;}
+
+body {
+	font-size: 16px;
+	font-family: Ubuntu, "Open Sans", sans-serif;
+}
+
+header, footer {
+    background-color: #e6cd44;
+    font-family: "Open Sans";
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+header {
+    padding: 5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+img {
+    width: 100%;
+}
+
+.logo {
+    display: flex;
+	align-items: center;
+	margin-left: 1rem;
+}
+
+.logo img {
+    width: 125px;
+    height: auto;
+}
+
+.headings h1 {
+    font-size: 1.5rem;
+}
+
+.m {
+	letter-spacing: 1pt;
+	font-weight: 700;
+	font-size: 0.8rem;
+}
+
+.social {
+    margin-right: 1.5rem;
+}
+
+.social img {
+    width: 25px;
+    height: auto;
+}
+
+.date,
+aside {
+	margin: 0.5rem;
+	border: 1px solid #bbb;
+	padding: 0.75rem;
+	background-color: #eee;
+}
+
+.grid-container {
+	display: grid;
+	grid-template-columns: auto;
+    gap: 10px;
+    padding: 10px;
+	font-size: .8rem;
+}
+
+main section {
+	margin: 1rem;
+	padding: 1rem;
+	background-color: #eee;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
