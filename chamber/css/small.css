@@ -8,7 +8,7 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
     -moz-box-sizing: border-box; 
     -webkit-box-sizing: border-box;
 }
-
+/* ~~~~~~~~~~~~~~ NAV ~~~~~~~~~~~~~~ */
 nav {
     background-color: #e6cd44;
     display: flex;
@@ -55,16 +55,19 @@ nav ul.open {display: block;}
 #hamburgerBtn.open span:nth-child(1) {display: none;}
 #hamburgerBtn.open span:nth-child(2) {display: block;}
 
+/* ~~~~~~~~~~~~~~ BODY ~~~~~~~~~~~~~~ */
+
 body {
 	font-size: 16px;
 	font-family: Ubuntu, "Open Sans", sans-serif;
 }
 
+/* ~~~~~~~~~~~~~~ HEADER ~~~~~~~~~~~~~~ */
+
 header, footer {
     background-color: #e6cd44;
     font-family: "Open Sans";
     text-transform: uppercase;
-    font-weight: 500;
     letter-spacing: 1px;
 }
 
@@ -72,7 +75,8 @@ header {
     padding: 5px 0;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
     margin: 0 auto;
 }
 
@@ -118,6 +122,8 @@ aside {
 	background-color: #eee;
 }
 
+/* ~~~~~~~~~~~~~~ MAIN ~~~~~~~~~~~~~~ */
+
 .grid-container {
 	display: grid;
 	grid-template-columns: auto;
@@ -126,16 +132,35 @@ aside {
 	font-size: .8rem;
 }
 
-main section {
-	margin: 1rem;
-	padding: 1rem;
+main section p {
+	display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding: 10px;
 	background-color: #eee;
 }
 
+
+/* ~~~~~~~~~~~~~~ FOOTER ~~~~~~~~~~~~~~ */
+
 footer {
+    font-size: smaller;
     display: flex;
-    justify-content: center;
+    flex-flow: column;
     align-items: center;
     padding: 1rem;
 }
 
+footer img {
+    width: 100px;
+}
+
+footer a {
+    text-decoration: none;
+}
+ footer p {
+     margin: .5rem;
+ }
+.name {
+    font-weight: 600;
+}
