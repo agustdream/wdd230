@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunset Harbor Home Page</title>
+    <meta name="description" content="Week 4 Assignment in WDD 230: Web Frontend Development at BYU-I">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Ubuntu&display=swap" rel="stylesheet">
+
+    <link href="css/small.css" rel="stylesheet">
+    <link href="css/medium.css" rel="stylesheet">
+    <link href="css/large.css" rel="stylesheet">
+
+    <link rel="shortcut icon" href="favicon.ico">
+
+</head>
+<body>
+    <header>
+        <div class="logo">
+        <picture>
+            <img src="images/logo-only.png" alt="sunset chamber logo">
+        </picture>
+        <section class="headings">
+            <h1>Sunset Harbor</h1>
+            <p class="m">Porto Alegre Chamber of Commerce</p>
+        </section>
+        </div>
+        <nav>
+            <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
+            <ul id="primaryNav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Location</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="social">
+            <a href="https://www.instagram.com/"><img src="images/instagram.png" alt="instagram icon"></a>
+            <a href="https://www.linkedin.com/"><img src="images/linkedin.png" alt="linkedin icon"></a>
+        </div>
+        <aside>
+        <div class="date"></div>
+        </aside>
+    </header>
+    <main>
+        <section class="grid-container">
+            <p class="hero">Hero with site name and call to action</p>
+            <p class="event">Event</p>
+            <p class="weather">Weather</p>
+            <p class="join">Join</p>
+            <p class="news">News Release</p>
+            <div class="spotlight">
+                <p class="spot1">Spotligth 1</p>
+                <p class="spot2">Spotlight 2</p>
+                <p class="spot3">Spotlight 3</p>
+            </div>
+
+        </section>
+    </main>
+    <footer>
+        <img class="logo-footer" src="images/logo-only.png" alt="sunset harbor logo">
+        <div class="info">
+            <p class="name">Sunset Harbor Chamber of Commerce</p>
+            <p class="address">Av. Carlos Gomes, ####</p>
+            <p class="address">Porto Alegre - RS - Brazil</p>
+        </div>
+        <div class="contact">
+            <p class="email">E-mail: contact@sunsetharbor.com</p>
+            <p class="phone">+55 51 99999-9999</p>
+            <a class="location" href="https://goo.gl/maps/SQWS6kiYG2yiFxtM7">Location</a>
+        </div>
+        <p>&copy; <span id="currentyear"></span> Sunset Harbor | <a href="https://agustdream.github.io/wdd230/lesson1/index.html">Gabriela Munhoz</a> | WDD 230 Project |</p>
+        <p>Last Updated: <span id="currentdate"></span></p>
+        <script src="js/scripts.js"></script>
+    </footer>
+</body>
+</html>
