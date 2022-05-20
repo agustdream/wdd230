@@ -7,8 +7,6 @@
     .grid-container {
         display: grid;
         grid-template-columns: 20% 60% 20%;
-        gap: 10px;
-        padding: 10px;
 	    font-size: .8rem;
     }
     .event {
