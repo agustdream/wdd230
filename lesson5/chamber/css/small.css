@@ -1,31 +1,100 @@
-html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
-
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    -moz-box-sizing: border-box; 
-    -webkit-box-sizing: border-box;
 }
-/* ~~~~~~~~~~~~~~ NAV ~~~~~~~~~~~~~~ */
-nav {
+
+/* ~~~~~~~~~~~~~~ BODY ~~~~~~~~~~~~~~ */
+
+body {
+	font-family: Ubuntu, "Open Sans", sans-serif;
+}
+
+img {
+    width: 100%;
+}
+
+/* ~~~~~~~~~~~~~~ HEADER ~~~~~~~~~~~~~~ */
+
+header, footer {
     background-color: #e6cd44;
-    display: flex;
-    justify-content: right;
+    font-family: "Open Sans";
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+header {
+    padding: 1rem;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(4 auto);
+    grid-template-rows: repeat(2 auto);
+    grid-gap: 5px;
+ }
+
+.logo {
+    height: auto;
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.logo img {
+    max-width: 125px;
+    min-width: 55px;
+}
+
+.headings {
+    grid-column: 3;
+}
+
+.headings h1 {
+    font-size: 1.5rem;
+}
+
+.m {
+	letter-spacing: 1pt;
+	font-weight: 700;
+	font-size: 0.8rem;
+}
+
+.social {
+    grid-column: 4;
+    grid-row: 1;
+    justify-content: end;
+}
+
+.social img {
+    width: 25px;
+    height: auto;
+}
+
+.date, aside {
+    grid-column: 1/5;
+    grid-row: 2/3;
+    text-align: center;
+	border: 1px solid #bbb;
+	padding: 0.75rem;
+	background-color: #eee;
+}
+
+/* ~~~~~~~~~~~~~~ NAV ~~~~~~~~~~~~~~ */
+
+nav {
+    grid-column: 1/2;
+    grid-row: 1/2;
 }
 
 nav ul {
     list-style-type: none;
     padding: 0;
-    margin: 0;
 }
 
 nav button {
-    margin: .2rem 2vw;
+    padding: .2rem 2vw;
     background: transparent;
     border: none;
     font-size: 2rem;
-    color: #555;    
+    color: #000;    
 }
 
 nav ul li a {
@@ -53,73 +122,6 @@ nav ul.open {display: block;}
 
 #hamburgerBtn.open span:nth-child(1) {display: none;}
 #hamburgerBtn.open span:nth-child(2) {display: block;}
-
-/* ~~~~~~~~~~~~~~ BODY ~~~~~~~~~~~~~~ */
-
-body {
-	font-size: 16px;
-	font-family: Ubuntu, "Open Sans", sans-serif;
-}
-
-/* ~~~~~~~~~~~~~~ HEADER ~~~~~~~~~~~~~~ */
-
-header, footer {
-    background-color: #e6cd44;
-    font-family: "Open Sans";
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-
-header {
-    padding: 5px 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin: 0 auto;
-}
-
-img {
-    width: 100%;
-}
-
-.logo {
-    display: flex;
-	align-items: center;
-	margin-left: 1rem;
-}
-
-.logo img {
-    width: 125px;
-    height: auto;
-}
-
-.headings h1 {
-    font-size: 1.5rem;
-}
-
-.m {
-	letter-spacing: 1pt;
-	font-weight: 700;
-	font-size: 0.8rem;
-}
-
-.social {
-    margin-right: 1.5rem;
-}
-
-.social img {
-    width: 25px;
-    height: auto;
-}
-
-.date,
-aside {
-	margin: 0.5rem;
-	border: 1px solid #bbb;
-	padding: 0.75rem;
-	background-color: #eee;
-}
 
 /* ~~~~~~~~~~~~~~ MAIN ~~~~~~~~~~~~~~ */
 

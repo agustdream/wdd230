@@ -8,6 +8,21 @@ function toggleMenu() {
 const x = document.getElementById('hamburgerBtn')
 x.onclick = toggleMenu;
 
+// banner
+
+let d = new Date().getDay();
+
+const banner = document.getElementById("#banner");
+if (d === 1 || d === 2) {
+  banner.style.display = "block";
+}
+
+const close = document.querySelector("#close");
+
+close.addEventListener("click", () => {
+  banner.style.display = "none";
+});
+
 // date header
 
 // select the elements to manipulate (output to)

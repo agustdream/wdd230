@@ -3,7 +3,7 @@
     nav button {
         display: none;
     }
-    nav ul#primaryNav {
+    nav ul li {
         display: flex;
         margin-left: 2vw;
     }

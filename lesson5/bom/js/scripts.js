@@ -4,14 +4,13 @@ function addButton() {
 
   // text box access
   const userInput = document.getElementById('#favchap');
-  let userInputValue = document.querySelector('#favchap').value;
-  document.querySelector('#favchap').value= ""
+  let inputValue = document.querySelector('#favchap').value;
+  document.querySelector('#favchap').value= "";
 
 
-  if (userInputValue != "") {
+  if (inputValue != "") {
     // ul access
     const list = document.querySelector('ul');
-
 
     // li and button
     const listItem = document.createElement('li');
@@ -23,7 +22,7 @@ function addButton() {
     listItem.textContent = userInputValue;
 
     // delete button
-    const dltButton = document.createElement("button");
+    const dltButton = document.createElement('button');
     dltButton.textContent = "❌";
 
     listItem.appendChild(dltButton);
@@ -32,8 +31,6 @@ function addButton() {
       list.removeChild(listItem);
     });
     
-    userInput.focus();
+    inputValue.focus();
   }  
-
-
 }
