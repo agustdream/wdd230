@@ -21,7 +21,7 @@
 <body> 
     <header>
         <div class="logo">
-            <img src="images/logo-only.png" alt="sunset harbor chamber logo">
+            <img src="images/logo-only.webp" alt="sunset harbor chamber logo">
         </div>
         <div class="headings">
             <h1>Sunset Harbor</h1>
@@ -45,14 +45,18 @@
     <main>
         <span id="banner">🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m <button id="close">❌</button></span>
         <section class="hero">
-            <h2>Welcome to Porto Alegre</h2>
+            <h2>Welcome to Porto Alegre!</h2>
             <div id="callToAction">
                 <a href="#">Join the Chamber</a>
-                <img src="images/orla-guaiba-edit.jpeg" alt="guaiba lake at sunset">
+                <img src="images/wdd230-org.jpg" alt="week 6 assignment image" sizes="50vw" 
+                srcset="images/wdd230-org-200.jpg 200w,
+                        images/wdd230-org-500.jpg 500w,
+                        images/wdd230-org-800.jpg 800w">
             </div>
         </section>
         <section id="weather">
-            <h2>Weather Widget</h2>
+            <h2>Weather</h2>
+            <p id="windChill"></p>
         </section>
         <section id="event">
             <h2>Monthly Chamber Gathering</h2>
@@ -64,7 +68,7 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et facilis laboriosam voluptatum, mollitia debitis illum a natus earum autem incidunt.</p>
         </section>
         <section id="join">
-            <button><a href="#">Join Us!</a></button>
+            <button>Join Us!</button>
             <h2>Discover how to join the chamber of commerce and how it will benefit your organization!</h2>
         </section>
         <section class="spotlight">
@@ -89,7 +93,7 @@
         </section>
     </main>
     <footer>
-        <img class="logo-footer" src="images/logo-only.png" alt="sunset harbor logo">
+        <img class="logo-footer" src="images/logo-only.webp" alt="sunset harbor logo">
         <div class="name">
             <h2>Sunset Harbor</h2>
             <h3>Chamber of Commerce</h3>
@@ -111,5 +115,6 @@
     </footer>
     <script src="js/scripts.js"></script>
     <script src="js/banner.js"></script>
+    <script src="js/windchill.js"></script>
 </body>
 </html>

@@ -9,12 +9,11 @@
         font-size: .9rem;
     }
 
-/* ~~~~~~~~~~~~~~ MAIN ~~~~~~~~~~~~~~ */ 
+/* ~~~~~~~~~~~~~~ MAIN ~~~~~~~~~~~~~~ */
 
     main {
         display: grid;
         grid-template-columns: 60% auto;
-        grid-template-rows: repeat(6 auto);
         gap: 10px;
         padding: 1rem;
 	    font-size: .8rem;
@@ -39,8 +38,8 @@
 
     #callToAction a {
         position: absolute;
-        top: 35rem;
-        right: 3rem;
+        top: 36rem;
+        right: 4rem;
         width: 250px;
         text-align: center;
         font-size: 1.5rem;
@@ -112,8 +111,6 @@
 
     footer {
         display: grid;
-        grid-template-columns: repeat(4 auto);  
-        grid-template-rows: repeat(3 auto);
         text-align: left;
     }
 

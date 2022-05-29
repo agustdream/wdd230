@@ -3,7 +3,7 @@
 let d = new Date().getDay();
 
 const banner = document.getElementById("banner");
-if (d === 1 || d === 2) {
+if (d === 1 || d === 4) {
   banner.style.display = "block";
 }
 else {

@@ -133,7 +133,6 @@ nav ul.open {display: block;}
 
 main {
 	display: grid;
-    grid-template-rows: repeat(5 auto);
     padding: 10px;
     gap: 15px;
 	font-size: .8rem;
@@ -158,14 +157,14 @@ main section {
     grid-row: 2;
 }
 
-.hero img {
-    max-width: 100%;
-    height: auto;
-}
-
 .hero h2 {
     padding: 1rem;
     background-color: #eee;
+}
+
+.hero img {
+    max-width: 100%;
+    height: auto;
 }
 
 #callToAction a {
@@ -212,6 +211,8 @@ main section {
     justify-content: center;
     background-color: #eee;
     padding: 10px;
+    grid-column: 1;
+    grid-row: 5;
 }
 
 
