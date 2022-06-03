@@ -1,0 +1,31 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Progressive Loading</title>
+        <link href="lazyload.css" rel="stylesheet">
+    </head>
+    <body>
+        <main>
+            <h1> Progressive Loading (Images)</h1>
+            <picture>
+                <img data-src="https://placekitten.com/300/400" src="http://via.placeholder.com/300x400" alt="kitten">
+            </picture>
+            <picture>
+                <img  data-src="https://picsum.photos/300/400" src="http://via.placeholder.com/300x400" alt="">
+            </picture>
+            <picture>
+                <img data-src="https://loremflickr.com/300/400" src="http://via.placeholder.com/300x400" alt="">
+            </picture>
+            <picture>
+                <img data-src="https://www.stevensegallery.com/300/400" src="http://via.placeholder.com/300x400" alt="">
+            </picture>
+            <picture>
+                <img data-src="https://www.fillmurray.com/300/400" src="http://via.placeholder.com/300x400" alt="">
+            </picture>
+        </main>
+        <script src="lazyload.js"></script>
+    </body>
+    </html>

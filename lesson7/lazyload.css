@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+    padding: 1rem;
+}
+
+picture {
+    padding: 1rem;
+}
+
+img {
+    width: 100%;
+    filter: blur(0em);
+    transition: filter 0.5s;
+}
+
+img[data-src] {
+    filter: blur(0.2em);
+}
