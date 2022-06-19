@@ -61,7 +61,7 @@ caption {
 
 table {
     border-collapse: collapse;
-    box-shadow: 0 0 20px rgb(190, 190, 190);
+    box-shadow: 0 0 40px rgb(190, 190, 190);
     letter-spacing: 1px;
     font-size: .8rem;
 }
