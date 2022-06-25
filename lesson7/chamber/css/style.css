@@ -10,10 +10,13 @@ body {
 	font-family: Ubuntu, "Open Sans", sans-serif;
 }
 
-p {
+h2 {
     padding: .5rem;
 }
 
+p {
+    padding: .5rem;
+}
 
 a {
     text-decoration: none;
@@ -83,7 +86,7 @@ header {
     grid-column: 1/5;
     grid-row: 3;
     text-align: center;
-	padding: 0.75rem;
+	padding: .75rem;
 	background-color: rgba(238, 238, 238, .7);
 }
 
@@ -245,8 +248,23 @@ main section {
 
 /* DISCOVER */
 
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+    background-color: transparent;
+}
 
+img[data-src] {
+    filter: blur(.2em);
+}
 
+#pic1, #pic2, #pic3, #pic4, #pic5 {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .2);
+    width: 85%;
+    padding: 10px;
+}
 
 /* ~~~~~~~~~~~~~~ FOOTER ~~~~~~~~~~~~~~ */
 
@@ -269,4 +287,9 @@ footer a {
 
 .name {
     font-weight: 600;
+}
+
+#visit-section {
+    font-weight: bold;
+    color: rgba(0, 0, 0, .7);
 }
