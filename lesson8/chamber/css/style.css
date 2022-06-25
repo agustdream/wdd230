@@ -10,6 +10,10 @@ body {
 	font-family: Ubuntu, "Open Sans", sans-serif;
 }
 
+h2 {
+    padding: .5rem;
+}
+
 p {
     padding: .5rem;
 }
@@ -82,7 +86,7 @@ header {
     grid-column: 1/5;
     grid-row: 3;
     text-align: center;
-	padding: 0.75rem;
+	padding: .75rem;
 	background-color: rgba(238, 238, 238, .7);
 }
 
@@ -130,6 +134,8 @@ nav ul.open {display: block;}
 #hamburgerBtn.open span:nth-child(2) {display: block;}
 
 /* ~~~~~~~~~~~~~~ MAIN ~~~~~~~~~~~~~~ */
+
+/* HOME */
 
 main {
 	display: grid;
@@ -191,9 +197,19 @@ main section {
     width: auto;
     height: 200px;
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
+    align-content: center;
+    justify-content: space-evenly;
     grid-column: 1;
     grid-row: 4;
+}
+
+#weather img {
+    width: 120px;
+    padding: .3rem;
 }
 
 #news {
@@ -230,6 +246,25 @@ main section {
     padding: 2px 16px;
 }
 
+/* DISCOVER */
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+    background-color: transparent;
+}
+
+img[data-src] {
+    filter: blur(.2em);
+}
+
+#pic1, #pic2, #pic3, #pic4, #pic5 {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .2);
+    width: 85%;
+    padding: 10px;
+}
 
 /* ~~~~~~~~~~~~~~ FOOTER ~~~~~~~~~~~~~~ */
 
@@ -252,4 +287,9 @@ footer a {
 
 .name {
     font-weight: 600;
+}
+
+#visit-section {
+    font-weight: bold;
+    color: rgba(0, 0, 0, .7);
 }

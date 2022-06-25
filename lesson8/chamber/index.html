@@ -30,10 +30,10 @@
         <nav class="navbar">
             <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
             <ul id="primaryNav">
-                <li class="active"><a href="#">Home</a></li>
+                <li class="active"><a href="https://agustdream.github.io/wdd230/lesson7/chamber/index.html">Home</a></li>
                 <li><a href="#">About Us</a></li>
-                <li><a href="#">Location</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="https://agustdream.github.io/wdd230/lesson7/chamber/discover.html">Discover</a></li>
+                <li><a href="#">Join</a></li>
             </ul>
         </nav>
         <div class="social">
@@ -42,21 +42,25 @@
         </div>
         <p class="date"></p>
     </header>
-    <main>
+    <main class="index-grid">
         <span id="banner">🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m <button id="close">❌</button></span>
         <section class="hero">
             <h2>Welcome to Porto Alegre!</h2>
             <div id="callToAction">
                 <a href="#">Join the Chamber</a>
-                <img src="images/wdd230-org.jpg" alt="week 6 assignment image" sizes="50vw" 
-                srcset="images/wdd230-org-200.jpg 200w,
-                        images/wdd230-org-500.jpg 500w,
-                        images/wdd230-org-800.jpg 800w">
+                <img src="images/orla-guaiba-org.jpeg" alt="orla guaiba lake" sizes="50vw" 
+                srcset="images/orla-guaiba-200.jpeg 200w,
+                        images/orla-guaiba-500.jpg 500w,
+                        images/orla-guaiba-800.jpg 800w">
             </div>
         </section>
         <section id="weather">
-            <h2>Weather</h2>
-            <p id="windChill"></p>
+            <span><h2>Weather</h2></span>
+            <img src="images/cloudy.png" alt="mostly cloudy">
+            <span id="temperature"></span>
+            <h3>(Mostly Cloudy)</h3>
+            <p>Wind Speed:<span id="wind"></span></p>
+            <p>Wind Chill:<span id="wind-chill"></span></p>
         </section>
         <section id="event">
             <h2>Monthly Chamber Gathering</h2>
