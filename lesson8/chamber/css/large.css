@@ -189,6 +189,27 @@
         transform: scale(1.05); 
     }
 
+/* JOIN */
+
+    .join-section {
+        display: block;
+        max-width: 800px;
+        margin-left: 20em;
+    }
+
+    
+
+    form input.submitBtn {
+        margin-left: 12rem;
+    }
+
+/* THANK YOU */
+
+    .thanks-section {
+        max-width: 500px;
+        margin-left: 30em;
+    }
+
 /* ~~~~~~~~~~~~~~ FOOTER ~~~~~~~~~~~~~~ */
 
     footer {

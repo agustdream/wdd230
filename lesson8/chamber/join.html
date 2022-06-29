@@ -32,8 +32,8 @@
             <ul id="primaryNav">
                 <li><a href="https://agustdream.github.io/wdd230/lesson7/chamber/index.html">Home</a></li>
                 <li><a href="#">About Us</a></li>
-                <li class="active"><a href="https://agustdream.github.io/wdd230/lesson7/chamber/discover.html">Discover</a></li>
-                <li><a href="#">Join</a></li>
+                <li><a href="https://agustdream.github.io/wdd230/lesson7/chamber/discover.html">Discover</a></li>
+                <li class="active"><a href="https://agustdream.github.io/wdd230/lesson8/chamber/join.html">Join</a></li>
             </ul>
         </nav>
         <div class="social">
@@ -42,8 +42,55 @@
         </div>
         <p class="date"></p>
     </header>
-    <main class="join-grid">
-            
+    <main class="join-section">
+        <section class="application">
+            <h2>Sunset Harbor Chamber Membership Application</h2>
+            <form method="get" action="thankyou.html">
+                <fieldset class="formgrid">
+                    <legend>Applicant Information</legend>
+                    <label class="top">First Name<span class="required">*</span> <input type="text" name="fname" placeholder="John" required></label>
+                    <label class="top">Last Name<span class="required">*</span> <input type="text" name="lname" placeholder="Doe" required></label>
+                    <label class="top">Title <input type="text" placeholder="Letters, spaces, and hyphens only" pattern="[A-Za-z -]{7,}" name="title"></label>
+                    <label class="top">Email<span class="required">*</span> <input type="email" name="email" placeholder="user@email.com" required></label>
+                    <label class="top">Phone<span class="required">*</span> <input type="tel" name="phone" placeholder="010-999-9999" required></label>
+                    <label class="top">Business Name<span class="required">*</span> <input type="text" name="bname" placeholder="Sunset Harbor Chamber of Commerce" required></label>
+                </fieldset>
+    
+                <fieldset>
+                    <legend>Describe Your Business</legend>
+                    <label class="businessdescription">
+                    <textarea name="description" rows="5" placeholder="Describe your business here"></textarea>
+                    </label>
+                </fieldset>
+    
+                <fieldset>
+                    <legend>Membership Level</legend>
+                    <div class="formgrid">
+                        <label class="sbs"><input type="radio" name="audience" value="np">  NP Membership</label>
+                        <span>NP Membership is for non profit organizations. Become an associate member of Sunset Harbor Chamber of Commerce at no cost.</span>
+                        <label class="sbs"><input type="radio" name="audience" value="bronze"> Bronze Membership</label>
+                        <span>Join the Bronze Membership level of our Chamber of Commerce for $48/month. This grants you access 
+                            to recorded and live meetings, access to newsletters, and event discounts.</span>
+                        <label class="sbs"><input type="radio" name="audience" value="silver"> Silver Membership</label>
+                        <span>Join the Silver Membership level of the Chamber of Commerce for $98/month. All Bronze Member perks, plus
+                            access to special seminars and promotions in our home page. Additional discounts and special offers are 
+                            also available.</span>
+                        <label class="sbs"><input type="radio" name="audience" value="gold"> Gold Membership</label>
+                        <span>Join the Gold Membership level of the Chamber of Commerce for $198/month. All the perks of Silver Membership,
+                            plus exclusive business counseling and planning with our team of experts.</span>
+                        </div>
+                    <label class="hidden"><input type="hidden" id="submitdate" name="submitdate"></label>
+                </fieldset>
+    
+                <fieldset>
+                    <legend>Confirm and Apply</legend>
+                    <label class="sbs"><input type="checkbox" id="agreemail" name="agreemail"> I would like to receive emails related to the Black Forest Chamber of Commerce.</label>
+                    <label class="sbs"><input type="checkbox" id="agreeconditions" name="agreeconditions" required> I have read and agree to the conditions of membership for the Black Forest Chamber of Commerce.<span class="required">*</span></label>
+                </fieldset>
+                <input type="submit" value="Apply for Membership" class="submitBtn">
+        
+            </form>
+        </section>
     </main>
     <footer>
         <img class="logo-footer" src="images/logo-only.webp" alt="sunset harbor logo">
@@ -70,6 +117,5 @@
     </footer>
     <script src="js/scripts.js"></script>
     <script src="js/visits.js"></script>
-    <script src="js/lazyload.js"></script>
 </body>
 </html>

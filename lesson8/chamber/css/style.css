@@ -4,7 +4,8 @@
     box-sizing: border-box;
 }
 
-/* ~~~~~~~~~~~~~~ BODY ~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~ BODY ~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 body {
 	font-family: Ubuntu, "Open Sans", sans-serif;
@@ -31,7 +32,8 @@ section {
     background-color: #eee;
 }
 
-/* ~~~~~~~~~~~~~~ HEADER ~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~ HEADER ~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 header, footer {
     background-color: #e6cd44;
@@ -90,7 +92,8 @@ header {
 	background-color: rgba(238, 238, 238, .7);
 }
 
-/* ~~~~~~~~~~~~~~ NAV ~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~ NAV ~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 nav ul {
     font-size: .7rem;
@@ -133,12 +136,16 @@ nav ul.open {display: block;}
 #hamburgerBtn.open span:nth-child(1) {display: none;}
 #hamburgerBtn.open span:nth-child(2) {display: block;}
 
-/* ~~~~~~~~~~~~~~ MAIN ~~~~~~~~~~~~~~ */
 
-/* HOME */
+
+/* ~~~~~~~~~~~~~~ MAIN ~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+
+
+/* -------------- HOME -------------- */
 
 main {
-	display: grid;
     padding: 10px;
     gap: 15px;
 	font-size: .8rem;
@@ -246,7 +253,7 @@ main section {
     padding: 2px 16px;
 }
 
-/* DISCOVER */
+/* -------------- DISCOVER -------------- */
 
 .gallery {
     display: flex;
@@ -266,7 +273,91 @@ img[data-src] {
     padding: 10px;
 }
 
-/* ~~~~~~~~~~~~~~ FOOTER ~~~~~~~~~~~~~~ */
+/* -------------- JOIN -------------- */
+
+form {
+    padding: 2rem;
+    margin: 0 auto;
+}
+
+form fieldset {
+    margin: 1rem;
+    border-radius: 10px;
+    padding: .5rem 2%;
+}
+
+form legend {
+    color: #333;
+    margin: 0 1rem;
+    padding: .5rem;
+    font-size: large;
+    font-weight: 600;
+}
+
+form label.top, form div {
+    display: block;
+    padding-bottom: 1rem;
+    color: #333;
+    font-size: .8rem;
+}
+
+form label.top input, form label.top select, textarea {
+    color: #000000;
+    background-color: #FFFFFF;
+    width: 100%;
+    font-size: 1rem;
+    padding: .75rem;
+    display: block;
+    border-radius: 4px;
+}
+
+form label.top input, form label.top select {
+    max-width: 50rem;
+}
+
+form label.sbs {
+    display: block;
+    padding: .75rem 0;
+    color: #333;
+    font-weight: 600;
+    font-size: larger;
+}
+
+form input.submitBtn {
+    border: none;
+    font-size: large;
+    font-weight: 600;
+    background-color: #8093cf;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    width: 88%;
+    margin-left: 1.2rem;
+    max-width: 20rem;
+}
+
+
+form label.top input:required {
+    border-left: #e23932 solid 6px;
+}
+
+form label.top input:required:valid {
+    border-left: #8093cf solid 6px;
+}
+
+.required {
+    color: #e23932;
+}
+
+/* Thanks */
+.thanks {
+    padding: 2rem;
+    max-width: 50rem;
+    margin: 0 auto;
+} 
+
+
+/* ~~~~~~~~~~~~~~ FOOTER ~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 footer {
     font-size: smaller;
