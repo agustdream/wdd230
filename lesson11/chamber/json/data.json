@@ -1,0 +1,53 @@
+{
+    "affiliates": [
+        {
+            "name": "Zaffari",
+            "phone": "(51) 4004-1112",
+            "website": "https://www.zaffari.com.br/",
+            "logo": "images/directory/zaffari.png",
+            "membership": "Gold"
+        },
+        {
+            "name": "Panvel",
+            "phone": "(51) 3218.9000",
+            "website": "https://www.panvel.com/",
+            "logo": "images/directory/panvel.jpg",
+            "membership": "Gold"
+        },
+        {
+            "name": "Pampa Burger",
+            "phone": "(51) 3290-2000",
+            "website": "https://www.pampaburger.com.br/",
+            "logo": "images/directory/pampa-burger.jpg",
+            "membership": "Silver"
+        },
+        {
+            "name": "Tumelero",
+            "phone": "(51) 3349-2200",
+            "website": "https://www.tumelero.com.br/",
+            "logo": "images/directory/tumelero.png",
+            "membership": "Silver"
+        },
+        {
+            "name": "Empório Santa Fé",
+            "phone": "(51) 3377-8112",
+            "website": "https://www.emporiosantafepoa.com.br/",
+            "logo": "images/directory/emporio-santa-fe.png",
+            "membership": "Bronze"
+        },
+        {
+            "name": "A sua Mercê",
+            "phone": "(51) 3574-1091",
+            "website": "https://a-sua-merce.goomer.app/",
+            "logo": "images/directory/merce.png",
+            "membership": "Bronze"
+        },
+        {
+            "name": "Instituto Vida Solidária",
+            "phone": "(51) 3086-0972",
+            "website": "https://www.amrigs.org.br/IVS",
+            "logo": "images/directory/IVS.png",
+            "membership": "NP"
+        }
+    ]
+}
