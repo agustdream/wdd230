@@ -142,16 +142,15 @@ nav ul.open {display: block;}
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 
-
 /* -------------- HOME -------------- */
 
-main {
+.index {
     padding: 10px;
     gap: 15px;
 	font-size: .8rem;
 }
 
-main section {
+.index section {
     padding: 10px;
 }
 
@@ -163,11 +162,8 @@ main section {
     grid-row: 1;
 }
 
-
 .hero {
-    padding: 0;
-    grid-column: 1;
-    grid-row: 2;
+    margin-top: -10px;
 }
 
 .hero h2 {
@@ -182,8 +178,8 @@ main section {
 
 #callToAction a {
     position: absolute;
-    top: 26rem;
-    right: 1.5rem;
+    top: 25rem;
+    right: 4rem;
     width: 130px;
     text-align: center;
     align-items: center;
@@ -206,17 +202,28 @@ main section {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    align-content: center;
     text-align: center;
     align-content: center;
     justify-content: space-evenly;
-    grid-column: 1;
-    grid-row: 4;
 }
 
 #weather img {
-    width: 120px;
-    padding: .3rem;
+    max-width: 100px;
+}
+
+.weather-temp {
+    font-weight: 600;
+    font-size: x-large;
+}
+
+.weather-condition {
+    text-transform: capitalize;
+    font-weight: 600;
+    font-size: x-large;
+}
+
+.wind-s, .wind-c {
+    font-weight: 600;
 }
 
 #news {
@@ -253,7 +260,7 @@ main section {
     padding: 2px 16px;
 }
 
-/* -------------- DISCOVER -------------- */
+/* DISCOVER */
 
 .gallery {
     display: flex;
@@ -273,7 +280,7 @@ img[data-src] {
     padding: 10px;
 }
 
-/* -------------- JOIN -------------- */
+/* JOIN */
 
 form {
     padding: 2rem;
@@ -348,12 +355,58 @@ form label.top input:required:valid {
     color: #e23932;
 }
 
-/* Thanks */
+/* THANKS */
+
 .thanks {
     padding: 2rem;
     max-width: 50rem;
     margin: 0 auto;
 } 
+
+/* CONTACT */
+
+.contact-form-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.contact-form label, .contact-form input {
+    display: block;
+    width: 100%;
+    margin-bottom: .5rem;
+    padding: .5rem;
+    font-weight: 600;
+}
+
+span.required {
+color: #e23932;       
+}
+
+input.msgBtn {
+    border: none;
+    font-size: large;
+    font-weight: 600;
+    background-color: #8093cf;
+    border-radius: 1rem;
+    margin-top: 1rem;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    margin-left: 2rem;
+    padding: 1rem;
+}
+
+.contact-info h3 {
+    padding: .8rem;
+}
+
+.contact-2 h2 {
+    text-align: center;
+}
 
 
 /* ~~~~~~~~~~~~~~ FOOTER ~~~~~~~~~~~~~~

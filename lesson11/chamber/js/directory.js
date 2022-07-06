@@ -14,7 +14,7 @@ async function fetchCompanies() {
 function displayCompanies(data) {
   data.affiliates.forEach(company => {
     let card = document.createElement('section');
-    let name = document.createElement('h3');
+    let h3 = document.createElement('h3');
     let phone = document.createElement('p');
     let website = document.createElement('p');
     let logo = document.createElement('img');
@@ -45,11 +45,11 @@ const gridbutton = document.querySelector("#grid");
 const listbutton = document.querySelector("#list");
 
 gridbutton.addEventListener("click", () => {
-  cards.classList.add("grids");
-  cards.classList.remove("lists");
+  cards.classList.add("grid");
+  cards.classList.remove("list");
 });
 
 listbutton.addEventListener("click", () => {
-  cards.classList.add("lists");
-  cards.classList.remove("grids");
+  cards.classList.add("list");
+  cards.classList.remove("grid");
 });

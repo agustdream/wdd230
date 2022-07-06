@@ -2,6 +2,7 @@
 
     header {
         display: grid;
+        margin-bottom: 1rem;
     }
 
     .logo {
@@ -33,9 +34,10 @@
 
 /* ~~~~~~~~~~~~~~ MAIN ~~~~~~~~~~~~~~ */
 
+
 /* HOME */
 
-    .index-grid {
+    .index {
         display: grid;
         gap: 10px;
         grid-template-columns: 20% auto auto 20%;
@@ -105,7 +107,6 @@
     }
 
     #weather {
-        width: auto;
         height: 200px;
         grid-column: 1;
         grid-row: 3;
@@ -128,17 +129,17 @@
 
 /* DISCOVER */
 
-    .discover-grid {
+    .discover {
         display: grid;
         gap: 10px;
         grid-template-columns: 67% auto;
     }
 
-    .discover-grid h2 {
+    .discover h2 {
         margin-left: 1rem;
     }
 
-    .discover-grid p {
+    .discover p {
         padding: 1rem;
     }
 
@@ -191,29 +192,60 @@
 
 /* JOIN */
 
-    .join-section {
+    .join {
         display: block;
         max-width: 800px;
-        margin-left: 20em;
+        margin: auto;
     }
 
-    
+    .join section {
+        margin: 1rem;
+        padding: 1rem;
+    }
+
+    .join h2 {
+        text-align: center;
+    }
 
     form input.submitBtn {
-        margin-left: 12rem;
+        align-self: center;
+        font-size: larger;
     }
 
 /* THANK YOU */
 
     .thanks-section {
         max-width: 500px;
-        margin-left: 30em;
+        margin: auto;
     }
 
+
+/* CONTACT */
+
+    .contact {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        justify-content: space-evenly;
+    }
+
+    .contact section {
+        margin: 1rem 2rem;
+        padding: 2rem;
+    }
+    
+    .contact-info {
+        margin-left: 4rem;
+    }
+    .contact-2 h2 {
+        text-align: center;
+    }
+    
 /* ~~~~~~~~~~~~~~ FOOTER ~~~~~~~~~~~~~~ */
 
     footer {
         display: grid;
+        margin-top: 1rem;
     }
 
     .logo-footer {
